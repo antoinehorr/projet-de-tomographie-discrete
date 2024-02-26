@@ -1,0 +1,202 @@
+import algo
+import outils
+import outils
+import time
+
+s_l, s_c, n, m = outils.lecture("data/1.txt")
+#print(s_l)
+#print(s_c)
+M = outils.init(n, m)
+outils.setN(M, 0, 0)
+outils.setB(M, 0, 1)
+#print(M)
+#outils.affichage(M)
+
+assert(algo.T0(2, 3, s_l[1]) == False)
+assert(algo.T0(2, 1, [1]))
+assert(algo.T0(0, 1, [2]) == False)
+assert(algo.T0(4, 1, [6]) == False)
+assert(algo.T0(2, 2, [1,1]))
+
+def tab(n,m):
+  res = []
+  for i in range(n):
+    res_i = []
+    for j in range(m):
+      res_i.append(2)
+    res.append(res_i)
+  return res
+
+"""
+assert(algo.T(tab(3,4),2, 3, s_l[1], [0, 0, 0]) == False)
+assert(algo.T(tab(3,2),2, 1, [1], [-1, 0, 0]))
+assert(algo.T(tab(1,2),0, 1, [2], [-1]) == False)
+assert(algo.T(tab(5,2),4, 1, [6], [0, 1, 1, 0, 0]) == False)
+assert(algo.T(tab(3,3),2, 2, [1, 1], [0, -1, 1]))
+assert(algo.T(tab(9,4),8, 3, s_l[1], [0, 0, 0, 0, 0, 0, 0, 0, 0]))
+assert(algo.T(tab(9,2),8, 1, [1], [-1, 0, 0, 0, 0, 0, 0, 0, 0]))
+assert(algo.T(tab(1,2),0, 1, [2], [-1]) == False)
+assert(algo.T(tab(9,2),8, 1, [6], [0, 1, 1, 0, 0, 0, 0, 0, 0]))
+assert(algo.T(tab(9,3),8, 2, [1, 1], [0, -1, 1, 0, 0, 0, 0, 0, 0]))
+assert(algo.T(tab(9,4),8, 3, s_l[1], [0, 0, 0, 0, 0, 0, 0, 0, 0]))
+assert(algo.T(tab(9,2),8, 1, [1], [-1, 0, 0, 0, 0, 0, 0, 0, 0]))
+assert(algo.T(tab(1,2),0, 1, [2], [-1]) == False)
+assert(algo.T(tab(5,2),4, 1, [3], [0, 0, -1, 0, 0]) == False)
+assert(algo.T(tab(5,4),4, 3, [1, 1, 1], [1, 0, 0, 0, 0]))
+assert(algo.T(tab(5,4),4, 3, [1, 1, 1], [-1, 0, 0, 0, 0]) == False)
+assert(algo.T(tab(5,3),4, 2, [1, 2], [1, -1, 2, 3, 4]))"""
+
+
+tps1 = time.time()
+b, A = algo.coloration("data/1.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/2.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/3.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/4.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/5.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/6.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/7.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/8.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/9.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/10.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/11.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/12.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/13.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/14.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/15.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.coloration("data/16.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.enum("data/11.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.enum("data/12.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.enum("data/13.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.enum("data/14.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.enum("data/15.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
+
+tps1 = time.time()
+b, A = algo.enum("data/16.txt")
+tps2 = time.time()
+print(b)
+outils.affichage(A)
+print(tps2 - tps1)
